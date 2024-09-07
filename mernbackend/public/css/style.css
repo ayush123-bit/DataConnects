@@ -1,0 +1,33 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling the navigation */
+  nav {
+    background-color: #333;
+  }
+  
+  /* Styling the unordered list */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling list items */
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  /* Styling anchor links */
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+  }
+  
+  /* Hover effect for anchor links */
+  nav ul li a:hover {
+    background-color: #555;
+  }

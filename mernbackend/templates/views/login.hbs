@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #an{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        body{
+            background-color: blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div id="an">
+        <form action="/login" method="POST">
+            <table>
+            <tr>
+                <th colspan="2">Please Enter The Login Details</th>
+            </tr>
+            <tr>
+                <td><label>USER NAME</label></td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td><label>PASSWORD</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+           
+            </tr>
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #an{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+    }
+    body{
+            background-color: blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div id="an">
+        <form action="/register" method="POST">
+            <table>
+            <tr>
+                <th colspan="2">Please Enter The Login Details</th>
+            </tr>
+            <tr>
+                <td><label> NAME</label></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label>PASSWORD</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+           <td> <label>GENDER</label> </td>
+            <td><input type="radio" name="gender" value="Male"/> Male </td>
+           <td><input type="radio" name="gender" value="Female"/> Female</td>   
+            </tr>
+            <tr>
+                <td><label>EMAIL</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>PHONE NO</label></td>
+                <td><input type="number" name="phonenumber"></td>
+            </tr>
+            <tr>
+                <td><label>DOB</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td> <label>language known</label> </td>
+                 <td><input type="radio" name="language" value="English"/> English</td>
+                <td><input type="radio" name="language" value="Hindi"/> Hindi</td>  
+                <td><input type="radio" name="language" value="Tamil"/> Tamil</td>
+                <td><input type="radio" name="language" value="Telgu"/> Telgu</td>   
+                 </tr>
+                 <tr>
+                    <td><label>ADDRESS</label></td>
+                    <td ><input type="text" name="address" ></td>
+                </tr> 
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
